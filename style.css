@@ -1,7 +1,30 @@
 label {
-    border:1px solid red;
+     border:1px solid red;
 
-}
+ }
 div {
     border :1px solid black;
 }
+h1{
+    color: red;
+}
+b {
+    color: red;
+    font-size: 20px;
+}
+ol {
+    color: red;
+}
+h2 {
+    color: green;
+}
+ i {
+    color: blue;
+}
+ p {
+     font-family: Arial;
+ }
+ ul {
+     color: lightpink;
+     font-style: italic;
+ }

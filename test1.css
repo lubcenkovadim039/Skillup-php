@@ -1,0 +1,22 @@
+p {
+    color: red;
+}
+div p {
+    color: green;
+}
+.bbb {
+    color: yellow;
+}
+#ttt.bbb {
+    color: blue;
+}
+div.test {
+    border: 1px dotted red;
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+}
+span {
+    border: 1px dotted red;
+}

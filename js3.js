@@ -1,0 +1,17 @@
+var styles = ['Джаз','Блюз'];
+var resP1 = document.getElementById('step1');
+resP1.innerHTML = 'Шаг 1 = ' + styles;
+styles.push('Рок-н-Ролл');
+var resP2 = document.getElementById('step2');
+resP2.innerHTML = 'Шаг 2 = ' + styles;
+styles.splice(-2,1,'Классика');
+var resP3 = document.getElementById('step3');
+resP3.innerHTML = 'Шаг 3 = ' + styles;
+styles.splice(0,1);
+//alert (styles);
+var resP4 = document.getElementById('step4');
+resP4.innerHTML = 'Шаг 4 = ' + styles;
+styles.unshift('Рэп','Регги');
+var resP5 = document.getElementById('res ');
+resP5.innerHTML = 'Шаг 5 = ' + styles;
+//alert (styles);

@@ -11,12 +11,16 @@ $('.delete').click(function () {
 });
 $('.js-ajax').click(function () {
     event.preventDefault();
-    $.get($(this).attr('href'), function (data) {
-        $('#content').html(data);
+    $('#content').load($(this).attr('href'));
+  //  $.get($(this).attr('href'), function (data) {
+   //     $('#content').html(data);
     });
     //alert('Кнопка нажата');
 
-}) ;
+//}) ;
+   // $(#button).click(function () {
+
+    })
 
 //$('.js-ajax').on('click', function () {
  //   $('.js-ajax').off('click', function () {

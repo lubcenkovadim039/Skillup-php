@@ -1,5 +1,297 @@
-<html>
-<body>
-First lesson
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework6</title>
+    <script src = " https://code.jquery.com/jquery-3.3.1.min.js " ></script >
+    <script src="js.js"></script>
+<style>
+    .td1 {
+    width: 20%;
+    }
+    .td2 {
+    width: 15%;
+    }
+    .taskP {
+        color: blue;
+        size: 14px;
+    }
+</style>
+</head>
+<body >
+<table>
+    <tr>
+        <td class="td1" > </td>
+        <td>
+        <h2>Задача 1</h2>
+            <p class="taskP">Всем 'h2' поставьте текст "!"..</p>
+            <button id="btn1" type="button" >Решение</button>
+            <h2 class="task1">Заголовок 1</h2>
+            <h2 class="task1">Заголовок 2</h2>
+            <h2 class="task1">Заголовок 3</h2>
+            <h2 class="task1">Заголовок 4</h2>
+        </td>
+        <td class="td2"></td>
+    </tr>
+    <tr>
+    <td class="td1"> </td>
+    <td>
+        <h2>Задача 2</h2>
+        <p class="taskP">Всем 'h3' сделайте красный цвет.</p>
+        <button id="btn2" type="button" >Решение</button>
+        <h3 class="task2">Заголовок 1</h3>
+        <h3 class="task2">Заголовок 2</h3>
+        <h3 class="task2">Заголовок 3</h3>
+        <h3 class="task2">Заголовок 4</h3>
+    </td>
+    <td class="td2"></td>
+</tr>
+    <tr>
+        <td class="td1"> </td>
+        <td >
+            <h2 >Задача 3</h2>
+            <p class="taskP"> Всем 'h2' сделайте голубой цвет и font-size: 30px. </p>
+            <button id="btn3" type="button" >Решение</button>
+            <h2 class="task3">Заголовок 1</h2>
+            <h2 class="task3">Заголовок 2</h2>
+            <h2 class="task3">Заголовок 3</h2>
+            <h2 class="task3">Заголовок 4</h2>
+        </td>
+        <td class="td2"></td>
+    </tr>
+    <tr>
+    <td class="td1"> </td>
+    <td>
+        <h2 align="center"> Задачи на простые селекторы, +, ~ </h2>
+        <h5 align="center">Получите и покрасьте в красный цвет следующие элементы:</h5>
+        <h2>Задача 4</h2>
+        <p class="taskP"> Все элементы с классом test.</p>
+        <button id="btn4" type="button" >Решение</button>
+        <h3 class="test">Заголовок 1</h3>
+        <p class="test">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam consequatur consequuntur cupiditate, earum eius eveniet illo laboriosam, minus nisi nobis reiciendis! Dolores facilis itaque sunt tempore tenetur ut vitae.</p>
+        <h3 class="zzz4">Заголовок 2</h3>
+        <h3 class="test">Заголовок 3</h3>
+        <h3 class="zzz4">Заголовок 4</h3>
+    </td>
+    <td class="td2"></td>
+</tr>
+    <tr>
+        <td class="td1"> </td>
+        <td>
+            <h2>Задача 5</h2>
+            <p class="taskP">Все 'h2' с классом task5.</p>
+            <button id="btn5" type="button" >Решение</button>
+            <h2 class="task5">Заголовок 1</h2>
+            <h3 class="task5">Заголовок 2</h3>
+            <h2 class="task5">Заголовок 3</h2>
+            <h3 class="task5">Заголовок 4</h3>
+
+        </td>
+        <td class="td2"></td>
+    </tr>
+    <tr>
+        <td class="td1"> </td>
+        <td >
+            <h2>Задача 6</h2>
+            <p class="taskP">Все абзацы которые следуют сразу за абзацами.</p>
+            <button id="btn6" type="button" >Решение</button>
+            <p >Абзац</p>
+            <p ><p>Абзац в Абзаце</p></p>
+            <p >Абзац</p>
+            <p ><p>Абзац в Абзаце</p></p>
+        </td>
+        <td class="td2"></td>
+    </tr>
+    <tr>
+        <td class="td1"> </td>
+        <td >
+            <h2>Задача 7</h2>
+            <p class="taskP">  Все 'li', которые следуют сразу за 'li' с классом task7</p>
+            <button id="btn7" type="button" >Решение</button>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam consequatur cumque deserunt dolor fugit, hic, incidunt laborum molestias necessitatibus neque nihil officia quaerat quos reiciendis rerum soluta ut velit.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto atque commodi delectus ducimus eos et eveniet expedita harum ipsa natus nisi omnis pariatur perspiciatis quaerat rerum velit, voluptas voluptate!</li>
+                <li class="task7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus iure magni nam quibusdam quidem rerum? Alias deserunt earum enim iste laborum magnam modi neque quisquam quo sit! Quasi, repudiandae.</li>
+
+            </ul>
+        </td>
+        <td class="td2"></td>
+    </tr>
+    <tr>
+        <td class="td1"> </td>
+        <td>
+            <h2>Задача 8</h2>
+            <p class="taskP">Все 'i' внутри 'h2'.</p>
+            <button id="btn8" type="button" >Решение</button>
+            <h2 class="task8">Заголовок 1</h2>
+            <h2 class="task8"><i>Заголовок 2</i></h2>
+            <h2 class="task8">Заголовок 3</h2>
+            <h2 class="task8"><i>Заголовок 4</i></h2>
+
+        </td>
+        <td class="td2"></td>
+    </tr>
+    <tr>
+        <td class="td1"> </td>
+        <td>
+            <h2>Задача 9</h2>
+            <p class="taskP">Все 'i' непосредственно внутри 'h2'.</p>
+            <button id="btn9" type="button" >Решение</button>
+            <h2 class="task9"><i> i in h2</i></h2>
+            <h2 class="task9">h2</h2>
+            <h2 class="task9"><p><i>i in p in h2</i></p></h2>
+            <h2 class="task9"><i>i in h2</i></h2>
+        </td>
+        <td class="td2"></td>
+    </tr>
+    <tr>
+    <td class="td1"> </td>
+    <td>
+        <h2 align="center">На селекторы jQuery</h2>
+        <h5 align="center">Для решения задач данного блока вам понадобятся следующие псевдоклассы jQuery: :has, :header, :empty, :contains, :not, :last, :first.
+            <br align="center">Получите и покрасьте в красный цвет следующие элементы:</h5>
+        <h2>Задача 10</h2>
+        <p class="taskP"> Все заголовки.</p>
+        <button id="btn10" type="button" >Решение</button>
+        <h2 class="task10">Заголовок h2</h2>
+        <h3 class="task10">Заголовок h3</h3>
+        <h4 class="task10">Заголовок h4</h4>
+        <h5 class="task10">Заголовок h5</h5>
+    </td>
+    <td class="td2"></td>
+</tr>
+    <tr>
+        <td class="td1"> </td>
+        <td>
+                       <h2>Задача 11</h2>
+            <p class="taskP"> Все 'h6' НЕ с классом task11.</p>
+            <button id="btn11" type="button" >Решение</button>
+            <h6 class="task11">Заголовок 1</h6>
+            <h6>Заголовок 2</h6>
+            <h6 class="task11">Заголовок 3</h6>
+            <h6>Заголовок 4</h6>
+        </td>
+        <td class="td2"></td>
+    </tr>
+    <tr>
+        <td class="td1"> </td>
+        <td>
+            <h2>Задача 12</h2>
+            <p class="taskP"> Все заголовки НЕ с классом task12.</p>
+            <button id="btn12" type="button" >Решение</button>
+            <h2 class="task12">Заголовок 1</h2>
+            <h2>Заголовок 2</h2>
+            <h2 class="task12">Заголовок 3</h2>
+            <h2>Заголовок 4</h2>
+        </td>
+        <td class="td2"></td>
+    </tr>
+    <tr>
+        <td class="td1"> </td>
+        <td>
+            <h2>Задача 13</h2>
+            <p class="taskP">  Все заголовки, которые следуют сразу за заголовками.</p>
+            <button id="btn13" type="button" >Решение</button>
+            <h2 class="task13">Заголовок 1</h2>
+            <h2 class="task13">Заголовок 2</h2>
+            <h2 class="task13">Заголовок 3</h2>
+            <h2 class="task13">Заголовок 4</h2>
+        </td>
+        <td class="td2"></td>
+    </tr>
+    <tr>
+        <td class="td1"> </td>
+        <td>
+            <h2>Задача 16</h2>
+            <p class="taskP"> Первый абзац 'p'</p>
+            <button id="btn16" type="button" >Решение</button>
+            <p class="task16">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores, autem blanditiis consectetur cumque ducimus error expedita explicabo molestias obcaecati omnis perspiciatis praesentium quia recusandae saepe sapiente sequi tempora tempore!</p>
+            <p class="task16">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque explicabo incidunt iste molestias obcaecati, perferendis quam quis quos rerum similique suscipit, temporibus! Amet dolores dolorum maxime, nemo quaerat velit voluptate!</p>
+        </td>
+        <td class="td2"></td>
+    </tr>
+    <tr>
+        <td class="td1"> </td>
+        <td>
+            <h2>Задача 17</h2>
+            <p class="taskP"> Пеоследний абзац 'p'</p>
+            <button id="btn17" type="button" >Решение</button>
+            <p class="task17">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores, autem blanditiis consectetur cumque ducimus error expedita explicabo molestias obcaecati omnis perspiciatis praesentium quia recusandae saepe sapiente sequi tempora tempore!</p>
+            <p class="task17">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque explicabo incidunt iste molestias obcaecati, perferendis quam quis quos rerum similique suscipit, temporibus! Amet dolores dolorum maxime, nemo quaerat velit voluptate!</p>
+        </td>
+        <td class="td2"></td>
+    </tr>
+    <tr>
+    <td class="td1"> </td>
+    <td>
+        <h2>Задача 19</h2>
+        <p class="taskP">  Все 'h2', внутри которых есть тег 'i'</p>
+        <button id="btn19" type="button" >Решение</button>
+        <h2 class="task19"><i> i in h2</i></h2>
+        <h2 class="task19">h2</h2>
+        <h2 class="task19"><p><i>i in p in h2</i></p></h2>
+        <h2 class="task19"><i>i in h2</i></h2>
+    </td>
+    <td class="td2"></td>
+</tr>
+    <tr>
+        <td class="td1"> </td>
+        <td>
+            <h2>Задача 20</h2>
+            <p class="taskP"> Все 'h2', которые непосредственно содержат 'i'</p>
+            <button id="btn20" type="button" >Решение</button>
+            <h2 class="task20"><i> i in h2</i></h2>
+            <h2 class="task20">h2</h2>
+            <h2 class="task20"><p><i>i in p in h2</i></p></h2>
+            <h2 class="task20"><i>i in h2</i></h2>
+        </td>
+        <td class="td2"></td>
+    </tr>
+    <tr>
+        <td class="td1"> </td>
+        <td>
+            <h2>Задача 21</h2>
+            <p class="taskP">Третью 'li'</p>
+            <button id="btn21" type="button" >Решение</button>
+            <ul>
+                <li class="task21">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam consequatur cumque deserunt dolor fugit, hic, incidunt laborum molestias necessitatibus neque nihil officia quaerat quos reiciendis rerum soluta ut velit.</li>
+                <li class="task21">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto atque commodi delectus ducimus eos et eveniet expedita harum ipsa natus nisi omnis pariatur perspiciatis quaerat rerum velit, voluptas voluptate!</li>
+                <li class="task21">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus iure magni nam quibusdam quidem rerum? Alias deserunt earum enim iste laborum magnam modi neque quisquam quo sit! Quasi, repudiandae.</li>
+                <li class="task21">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus iure magni nam quibusdam quidem rerum? Alias deserunt earum enim iste laborum magnam modi neque quisquam quo sit! Quasi, repudiandae.</li>
+                <li class="task21">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus iure magni nam quibusdam quidem rerum? Alias deserunt earum enim iste laborum magnam modi neque quisquam quo sit! Quasi, repudiandae.</li>
+
+            </ul>
+        </td>
+        <td class="td2"></td>
+    </tr>
+    <tr>
+        <td class="td1"> </td>
+        <td>
+            <h2>Задача 23</h2>
+            <p class="taskP">Все 'li' меньше 10-той.</p>
+            <button id="btn23" type="button" >Решение</button>
+            <ul>
+                <li class="task23">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam consequatur cumque deserunt dolor fugit, hic, incidunt laborum molestias necessitatibus neque nihil officia quaerat quos reiciendis rerum soluta ut velit.</li>
+                <li class="task23">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto atque commodi delectus ducimus eos et eveniet expedita harum ipsa natus nisi omnis pariatur perspiciatis quaerat rerum velit, voluptas voluptate!</li>
+                <li class="task23">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus iure magni nam quibusdam quidem rerum? Alias deserunt earum enim iste laborum magnam modi neque quisquam quo sit! Quasi, repudiandae.</li>
+                <li class="task23">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus iure magni nam quibusdam quidem rerum? Alias deserunt earum enim iste laborum magnam modi neque quisquam quo sit! Quasi, repudiandae.</li>
+                <li class="task23">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus iure magni nam quibusdam quidem rerum? Alias deserunt earum enim iste laborum magnam modi neque quisquam quo sit! Quasi, repudiandae.</li>
+                <li class="task23">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam consequatur cumque deserunt dolor fugit, hic, incidunt laborum molestias necessitatibus neque nihil officia quaerat quos reiciendis rerum soluta ut velit.</li>
+                <li class="task23">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto atque commodi delectus ducimus eos et eveniet expedita harum ipsa natus nisi omnis pariatur perspiciatis quaerat rerum velit, voluptas voluptate!</li>
+                <li class="task23">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus iure magni nam quibusdam quidem rerum? Alias deserunt earum enim iste laborum magnam modi neque quisquam quo sit! Quasi, repudiandae.</li>
+                <li class="task23">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus iure magni nam quibusdam quidem rerum? Alias deserunt earum enim iste laborum magnam modi neque quisquam quo sit! Quasi, repudiandae.</li>
+                <li class="task23">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus iure magni nam quibusdam quidem rerum? Alias deserunt earum enim iste laborum magnam modi neque quisquam quo sit! Quasi, repudiandae.</li>
+                <li class="task23">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam consequatur cumque deserunt dolor fugit, hic, incidunt laborum molestias necessitatibus neque nihil officia quaerat quos reiciendis rerum soluta ut velit.</li>
+                <li class="task23">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto atque commodi delectus ducimus eos et eveniet expedita harum ipsa natus nisi omnis pariatur perspiciatis quaerat rerum velit, voluptas voluptate!</li>
+                <li class="task23">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus iure magni nam quibusdam quidem rerum? Alias deserunt earum enim iste laborum magnam modi neque quisquam quo sit! Quasi, repudiandae.</li>
+                <li class="task23">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus iure magni nam quibusdam quidem rerum? Alias deserunt earum enim iste laborum magnam modi neque quisquam quo sit! Quasi, repudiandae.</li>
+                <li class="task23">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ducimus iure magni nam quibusdam quidem rerum? Alias deserunt earum enim iste laborum magnam modi neque quisquam quo sit! Quasi, repudiandae.</li>
+
+            </ul>
+        </td>
+        <td class="td2"></td>
+    </tr>
+</table>
+
 </body>
 </html>

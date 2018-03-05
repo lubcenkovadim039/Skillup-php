@@ -21,7 +21,7 @@ if (isset($_POST['email'])) {
             exit();
         }
             else {
-            $errorMessege = '<h1>email адрес -->'.$_POST['email'] .'<-- указан неверно</h1>';
+            $errorMessege = '<h1>email адрес -->'.$_POST['email'] .'<-- указан не верно</h1>';
             }
 
     }

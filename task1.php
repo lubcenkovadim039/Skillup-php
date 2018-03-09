@@ -22,19 +22,15 @@ if (!$erorrMesege){
         <th width = "180px">Password</th>
     </tr>
     <?php
-    $arrayUser = array();
-    $arrayElem = array();
     foreach ($users as $key=>$uspass) {
-    $arrayUser[$key] = $uspass;
-   foreach ($arrayUser as $i=>$elem){
-       $arrayElem[$i] = $elem;}
+
         ?>
         <tr>
             <td align="center">
-                <?php print_r($arrayElem[$i][0])?>
+                <?php print_r($uspass[0])?>
             </td>
             <td align="center">
-                <?php print_r($arrayElem[$i][1])?>
+                <?php print_r($uspass[1])?>
             </td>
         </tr> <?php
     }}; ?>

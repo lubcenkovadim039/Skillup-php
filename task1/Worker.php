@@ -1,7 +1,7 @@
 <?php
 
 
-class Worker1
+class Worker
 {
 public $name;
 public $age;

@@ -1,6 +1,6 @@
 <?php
-require_once 'Worker5.php';
-class Driver6 extends Worker5
+require_once 'Worker.php';
+class Driver extends Worker
 {
 private $experience;
 private $category;

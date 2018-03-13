@@ -1,17 +1,10 @@
 <?php
 
-class Worker4
+class Worker
 {
 private $name;
 private $age;
 private $salary;
-
-public function __construct($name,$age,$salary)
-{
-    $this->name = $name;
-    $this->age = $age;
-    $this->salary = $salary;
-}
 
     /**
      * @return mixed
@@ -28,7 +21,6 @@ public function __construct($name,$age,$salary)
     {
         $this->name = $name;
     }
-
     /**
      * @return mixed
      */
@@ -43,7 +35,7 @@ public function __construct($name,$age,$salary)
     public function setAge($age)
     {
        if($this->chekAge($age)){
-           $this->age = $age;
+           return $this->age = $age;
        }
     }
 
@@ -63,12 +55,13 @@ public function __construct($name,$age,$salary)
         $this->salary = $salary;
     }
 
-        public function chekAge($age)
-        {
-            if($age < 100){
-                return true;
-            } else {
-                return false;
-            }
+    public function chekAge($age)
+    {
+        if($age < 100){
+            return true;
+        }else {
+            return false;
         }
+    }
+
 }

@@ -1,37 +1,33 @@
 <?php
 require_once 'Form.php';
+
 class SmartForm extends Form
 {
-private $name;
-private $pass;
-private $textarea;
-
-    /**
-     * @param mixed $name
-     */
-    public function setName($name)
-    {
-        $this->name = $name;
+    public function input($attr){
+        $attr = $this->processValue($attr);
+        return parent::input($attr);
     }
-
-    /**
-     * @param mixed $pass
-     */
-    public function setPass($pass)
-    {
-        $this->pass = $pass;
+    public function password($attr){
+        $attr = $this->processValue($attr);
+        return parent::password($attr);
     }
-
-    /**
-     * @param mixed $textarea
-     */
-    public function setTextarea($textarea)
+    public function textarea($attr)
     {
-        $this->textarea = $textarea;
+        $attr = $this->processValue($attr);
+        return parent::textarea($attr);
     }
-
-
-
-
-
+    protected function renderAttributes($attr)
+    {
+        $attr = $this->processValue($attr);
+        return parent::renderAttr($attr);
+    }
+    private function processValue($attr) {
+        if (isset($attr['name'])) {
+            $name = $attr['name'];
+            if (isset($_POST[$name])) {
+                $attr['value'] = $_POST[$name];
+            }
+        }
+        return $attr;
+    }
 }

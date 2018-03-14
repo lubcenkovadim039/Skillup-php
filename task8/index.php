@@ -8,7 +8,7 @@
 
 
 <?php
-require 'SmartForm.php';
+require_once 'SmartForm.php';
 
 $form = new SmartForm;
 echo $form->open(['action'=>'index.php', 'method'=>'POST']);
@@ -17,8 +17,3 @@ echo $form->password(['placeholder'=>'Ваш пароль', 'name'=>'pass']);
 echo $form->textarea([ 'name'=>'textarea','class'=>'area','value'=>'Lorem' ]);
 echo $form->submit(['value'=>'Отправить','name'=>'button']);
 echo $form->close();
-if (isset($_POST['button'])){
-    $form->setName($_POST['name']);
-    $form->setPass($_POST['pass']);
-    $form->setTextarea($_POST['textarea']);
-}

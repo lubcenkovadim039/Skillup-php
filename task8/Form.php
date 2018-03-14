@@ -2,85 +2,46 @@
 
 class Form
 {
-    /**
-     * @var array
-     */
-    protected $attr;
-    /**
-     * @param array $attr
-     */
-    private function setAttr($attr)
+    public function renderAttr($attr)
     {
-        $this->attr = $attr;
-
-        return $this;
-    }
-    private function tagShow($tag)
-    {
-        $fet = '<'.$tag;
-        foreach ($this->attr as $key => $elem){
-
-            $fet .= ' ' . $key . '="' . htmlspecialchars($elem) . '"';
-
-       }
-       if($tag === 'textarea'){
-          $fet .= '>';
-        }else {
-            $fet .= '><br><br>';
+        $ret = ' ';
+        foreach ($attr as $types=>$values){
+            $ret .= ' '.$types.'="'.htmlspecialchars($values).'" ';
         }
-        return $fet;
+        return $ret;
     }
+   public  function  open($attr)
+   {
+       return '<form '.$this->renderAttr($attr).' ><br>';
+   }
 
-    public function open($attr)
+    public  function  input($attr)
     {
-        $this->setAttr($attr);
-       return $this->tagShow('form');
-
+        return '<input '.$this->renderAttr($attr).'><br>';
     }
 
-    public function input($attr)
+    public  function  password($attr)
     {
-        $this->setAttr($attr);
-
-        return $this->tagShow('input');
+        return '<input type = "password" '.$this->renderAttr($attr).'><br>';
     }
 
-    public function password($attr)
-    {
-        $this->setAttr($attr);
-        $this->attr += ['type'=>'password'];
-
-
-        return $this->tagShow('input');
-
-    }
-
-    public function submit($attr)
-    {
-        $this->setAttr($attr);
-        $this->attr += ['type'=>'submit'];
-
-
-        return $this->tagShow('input');
-
-    }
-
-    public function textarea($attr)
-    {
-        $this->setAttr($attr);
-
-        return $this->tagShow('textarea').'</textarea><br><br>';
-
-    }
-
-    public function close()
+    public  function  textarea($attr)
     {
 
-        $fet = '</form>';
+            $value = $attr['value'];
+            unset($attr['value']);
 
-        return $fet;
-
+        return '<textarea '.$this->renderAttr($attr).' >'.htmlspecialchars($value).'</textarea><br>';
     }
 
+    public  function submit($attr)
+    {
+        return '<input type = "submit" '.$this->renderAttr($attr).' ><br>';
+    }
+
+    public  function  close()
+    {
+        return '</form>';
+    }
 
 }
